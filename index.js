@@ -1,11 +1,16 @@
+document.getElementById('copyright').innerHTML =
+    `&copy; ${new Date().getFullYear()} Desenvolvido por Leonardo Filipe.`;
+
+
 function encurtarUrl(){
-    //Passo 1 - verificar se o link existe
+
     let url = document.querySelector("#input-url").value;
 
-    if(!url){
-        alert("É necessario a inclusão da URL");
-        return
+    if (!url.trim()) {
+        alert("É necessário a inclusão da URL");
+        return;
     }
+
 
     let headers = {
         "Content-Type": "application/json",
@@ -28,6 +33,11 @@ function encurtarUrl(){
     }).catch(error => {
         console.error('Erro ao encurtar URL:', error);
     });
+}
+
+function atualizarCopyright() {
+    document.getElementById('copyright').innerHTML =
+    `&copy; ${new Date().getFullYear()} Desenvolvido por Leonardo Filipe.`;
 }
 
 function copiar(){

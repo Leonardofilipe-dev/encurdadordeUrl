@@ -52,7 +52,13 @@ nav {
   }
 
 
-
+#msg-url {
+    text-align: center;
+    display: block;
+    margin: 8px auto 0 auto;
+    color: red;
+     align-items: center;
+}
 
 
 

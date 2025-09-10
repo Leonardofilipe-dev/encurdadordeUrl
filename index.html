@@ -15,19 +15,20 @@
 <header class="header-top">
 <nav>
     <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>Inicio</li>
+        <li>Sobre</li>
+        <li>Contato</li>
     </ul>
 </nav>
 </header>
 
     <div class="box">
-        <h2 class="title">Link shortener</h2>
+        <h2 class="title">Encurtador de Link</h2>
         <div class="box-input">
-            <input class="input-url" id="input-url" type="text" placeholder="Include URL here" />
-            <button class="btn" onclick="encurtarUrl()">Shorten</button>
-            <button class="btn" onclick="copiar()">Copy</button>
+            <input class="input-url" id="input-url" type="text" placeholder="Coloque a URL aqui" />
+            <button class="btn" onclick="encurtarUrl()">Encurtar</button>
+            <button class="btn" onclick="copiar()">Copiar</button>
+            <span id="msg-url" style="color: red; display: block; margin-top: 8px;"></span>
         </div>
     </div>
 
@@ -41,7 +42,7 @@
 
         </div>
         <div id="container-footer">
-        <p>&copy; 2023 Leonardo Filipe Participations. All rights reserved.</p>
+        <p id="copyright"></p>
         </div>
         
 
